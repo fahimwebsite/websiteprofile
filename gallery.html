@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .wrapper {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        li,
+        a,
+        button {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: aqua;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: gray;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .logo img {
+            width: 50px;
+            float: right;
+            padding-left: 5%;
+            padding-top: 3%;
+            filter: invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.2);
+        }
+
+        nav {
+            order: 1;
+        }
+
+        .nav__links {
+            list-style: none;
+        }
+
+        .nav__links li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav__links li:nth-child(1) {
+            padding-right: 0;
+        }
+
+        .nav__links li a {
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav__links li a:hover {
+            color: #fac031;
+            background: black;
+            padding: 8px 12px; /* Added padding to create a hover effect */
+            border-radius: 5px; /* Added border-radius to create rounded corners */
+        }
+
+        .cta {
+            order: 2;
+        }
+
+        button {
+            padding: 9px 25px;
+            background-color: rgba(0, 136, 169, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover {
+            background-color: rgba(0, 136, 169, 0.1);
+        }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 70px; }
+
+            .row {
+        flex-basis: calc(25% - 20px);
+        margin-bottom: 20px;
+        margin-top: 60px; /* Adjust this value as needed */
+    }
+
+  
+
+.image-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding-top: 80px; 
+padding-bottom: 20px;
+}
+
+.image-column {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-style {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-style:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.video-style {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.container .btn a {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.footer {
+            background-color:black;
+            padding: 20px;
+            color: #edf0f1;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+  <header>
+    <a href="index.html">My Home</a>
+    <a href="biodata.html">My Biodata</a>
+    <a href="education.html">My Education</a>
+    <a href="experience.html">My Experience</a>
+    <a href="gallery.html">My gallery</a>
+    <a href="contact.html">Contact Me</a>
+    </header>
+    
+ 
+    
+    <div class="image-container">
+        <div class="image-column">
+            <img src="https://i.imgur.com/GRjl9FB.jpg" alt="Description of image 1" class="image-style">
+            <img src="https://i.imgur.com/9DkrTkl.jpg" alt="Description of image 4" class="image-style">
+            <img src="https://i.imgur.com/xDBS4Lh.jpg" alt="Description of image 7" class="image-style">
+            <img src="https://i.imgur.com/lDRGmAB.jpg" alt="Description of image 10" class="image-style">
+            <img src="https://i.imgur.com/8cSKr84.jpg" alt="Description of image 13" class="image-style">
+            <img src="https://i.imgur.com/YyrgC1n.jpg" alt="Description of image 16" class="image-style">
+            <img src="https://i.imgur.com/zlUlHzH.jpg" alt="Description of image 19" class="image-style">
+            <img src="https://i.imgur.com/f73hngg.jpg" alt="Description of image 24" class="image-style">
+            <img src="https://i.imgur.com/GUUjPzI.jpg" alt="Description of image 26" class="image-style">
+            <img src="https://i.imgur.com/fuTCrL1.jpg" alt="Description of image 28" class="image-style">
+        </div>
+        <div class="image-column">
+    
+            <img src="https://i.imgur.com/dQVtS94.jpg" alt="Description of image 2" class="image-style">
+            <img src="https://i.imgur.com/aeZ3d3O.jpg" alt="Description of image 5" class="image-style">
+            <img src="https://i.imgur.com/R7Ls2x7.jpg" alt="Description of image 8" class="image-style">
+            <img src="https://i.imgur.com/tW86Lus.jpg" alt="Description of image 11" class="image-style">
+            <img src="https://i.imgur.com/bCjLBKN.jpg" alt="Description of image 14" class="image-style">
+            <img src="https://i.imgur.com/8XYvPE2.jpg" alt="Description of image 17" class="image-style">
+            <img src="https://i.imgur.com/aS5M2ni.jpg" alt="Description of image jj" class="image-style">
+            <img src="https://i.imgur.com/O4BTDiH.jpg" alt="Description of image 20" class="image-style">
+            <img src="https://i.imgur.com/x9Lt3tR.jpg" alt="Description of image 21" class="image-style">
+            <img src="https://i.imgur.com/RbSGSSb.jpg" alt="Description of image 25" class="image-style">
+        </div>
+        <div class="image-column">
+            <img src="https://i.imgur.com/UIYj6jz.jpg" alt="Description of image 3" class="image-style">
+            <img src="https://i.imgur.com/IxTGZ2p.jpg" alt="Description of image 6" class="image-style">
+            <img src="https://i.imgur.com/ppKDztl.jpg" alt="Description of image 9" class="image-style">
+            <img src="https://i.imgur.com/2e4199X.jpg" alt="Description of image 12" class="image-style">
+            <img src="https://i.imgur.com/y5sflfQ.jpg" alt="Description of image 15" class="image-style">
+            
+            <img src="https://i.imgur.com/u0dTS7L.jpg" alt="Description of image 18" class="image-style">
+            <img src="https://i.imgur.com/paWwJvQ.jpg" alt="Description of image 22" class="image-style">
+            <img src="https://i.imgur.com/ELtdSLe.jpg" alt="Description of image 23" class="image-style">
+        </div>
+        <div class="video-container">
+            <video src="images/gitar.mp4" autoplay controls class="video-style"></video>
+    </div>
+   
+    
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2023 My Gallery. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
